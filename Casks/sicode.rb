@@ -1,11 +1,11 @@
 cask "sicode" do
-  version "0.9.4"
-  sha256 "bb9fc2b52a9e32d9de5c8fcc4defd2bb92798495b3d0d7645113451458f1e1bb"
+  version "0.9.5"
+  sha256 "555882d611f69075e70ca439d228197fbc40cea2c95a7da5a5262197924a1a51"
 
-  url "https://github.com/JonasDPDK/sicode-releases/releases/download/v#{version}/Sicode-#{version}.dmg"
+  url "https://github.com/Kodeance/sicode-releases/releases/download/v#{version}/Sicode-#{version}.dmg"
   name "Sicode"
   desc "Worktree terminal for coding agents"
-  homepage "https://github.com/JonasDPDK/sicode-releases"
+  homepage "https://github.com/Kodeance/sicode-releases"
 
   livecheck do
     url :url
