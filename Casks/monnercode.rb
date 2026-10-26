@@ -1,6 +1,6 @@
 cask "monnercode" do
-  version "0.11.1"
-  sha256 "58d30507a1b71bfe8aeaf4b7db2f224352670c0193a74bfbffdf107624c2d48d"
+  version "0.13.0"
+  sha256 "fb3f3e50b5590cea49c932bc53f9637c8a91aa60340c5e478c9a7d676d189cb4"
 
   url "https://github.com/Kodeance/monnercode-releases/releases/download/v#{version}/Monnercode-#{version}.dmg"
   name "Monnercode"
@@ -19,9 +19,6 @@ cask "monnercode" do
   app "Monnercode.app"
   binary "#{appdir}/Monnercode.app/Contents/Resources/bin/monnercode"
 
-  # Monnercode isn't notarized: with the download's quarantine flag, macOS blocks the first launch, and that
-  # dialog's "Move to Trash" deletes the app. Cleared on the staged copy, before it's moved to the Applications
-  # folder (install steps can't name that folder). Sparkle's updates arrive without the flag.
   preflight_steps do
     run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "Monnercode.app"], chdir: "."
   end
