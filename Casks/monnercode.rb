@@ -1,6 +1,6 @@
 cask "monnercode" do
-  version "0.14.0"
-  sha256 "0ba5783af2bae8b26ff2a09a5a88063d0e5d83a1a5c4f448036decde460f9665"
+  version "0.15.0"
+  sha256 "eab5c1c6fe4dc589ee0674c6e532e213716b1ab65b9ebee50169387154fa2d08"
 
   url "https://github.com/Kodeance/monnercode-releases/releases/download/v#{version}/Monnercode-#{version}.dmg"
   name "Monnercode"
